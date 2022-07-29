@@ -63,7 +63,7 @@ _This is an MVC application that was built using C#. The purpose of this applica
 
 <pre>{
   "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Port=3306;database=zac_waggoner;uid=root;pwd=[YOUR-PASSWORD-HERE];"
+    "DefaultConnection": "Server=localhost;Port=3306;database=hair_salon;uid=root;pwd=[YOUR-PASSWORD-HERE];"
   }
 }</pre>
 <small>*note: you must include your password in the code block section labeled "YOUR-PASSWORD-HERE".</small><br>
@@ -77,7 +77,7 @@ How to Import a Database:
   <li>Click "Data Import/Restore".
   <li>Select the radio button "Import from Self-Contained File" and include file path to the sql file of this project you cloned to your machine.
   <li>In "Default Schema to be Imported to" click "New".
-  <li>Name the schema "zac_waggoner" then click "OK".
+  <li>Name the schema "hair_salon" then click "OK".
   <li>Once named, switch to "Import Progress" tab and click "Start Import".
 </details>
 
