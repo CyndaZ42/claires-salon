@@ -8,3 +8,5 @@
 <hr />
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<h3>
 <p class="btn btn-success">@Html.ActionLink("Back to Stylist List", "Index")</p>
+<p class="btn btn-warning">@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
+<p class="btn btn-danger">@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
