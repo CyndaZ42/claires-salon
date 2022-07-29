@@ -37,7 +37,7 @@ _This is an MVC application that was built using C#. The purpose of this applica
 <details>
 <summary><strong>Initial Setup</strong></summary>
 <ol>
-<li>Clone this git repository: <a href="https://github.com/CyndaZ/claires-salon.git">https://github.com/CyndaZ/claires-salon.git</a>
+<li>Clone this git repository: <a href="https://github.com/CyndaZ42/claires-salon.git">https://github.com/CyndaZ42/claires-salon.git</a>
 <li>Clone the repository for this project using the "git clone" command and including the copied URL.
 <li>in the terminal, navigate to the root directory of the newly created file named "HairSalon.Solution".
 <li>From the root directory, navigate to the "HairSalon" directory.
