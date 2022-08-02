@@ -23,20 +23,6 @@ namespace HairSalon.Controllers
       return View(model);
     }
 
-    public ActionResult Create()
-    {
-      ViewBag.ClientId = new SelectList(_db.Client, "ClientId", "Name");
-      return View();
-    }
-
-    [HttpPost]
-    public ActionResult Create(Stylist stylist)
-    {
-      _db.Stylist.Add(stylist);
-      _db.SaveChanges();
-      return RedirectToAction("Index");
-    }
-
     public ActionResult Details(int id)
     {
       Stylist thisStylist = _db.Stylist.FirstOrDefault(stylist => stylist.StylistId == id);
@@ -69,6 +55,20 @@ namespace HairSalon.Controllers
     {
       var thisStylist = _db.Stylist.FirstOrDefault(stylist => stylist.StylistId == id);
       _db.Stylist.Remove(thisStylist);
+      _db.SaveChanges();
+      return RedirectToAction("Index");
+    }
+
+    public ActionResult Create()
+    {
+      ViewBag.StylistId = new SelectList(_db.Stylist, "StylistId", "Name");
+      return View();
+    }
+
+    [HttpPost]
+    public ActionResult Create(Client client)
+    {
+      _db.Client.Add(client);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }

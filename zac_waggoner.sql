@@ -27,7 +27,7 @@ CREATE TABLE `client` (
   `Name` varchar(255) DEFAULT NULL,
   `StylistId` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`ClientId`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +36,7 @@ CREATE TABLE `client` (
 
 LOCK TABLES `client` WRITE;
 /*!40000 ALTER TABLE `client` DISABLE KEYS */;
-INSERT INTO `client` VALUES (1,'Schmichaels',1),(3,'Bianca',2),(4,'Tuk\'s',3);
+INSERT INTO `client` VALUES (1,'Bianca',3),(2,'Vincent',2),(3,'Jeremy',2),(4,'Jenna',3),(5,'Jamie',3),(6,'Erica',2),(7,'Toby',2);
 /*!40000 ALTER TABLE `client` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -51,7 +51,7 @@ CREATE TABLE `stylist` (
   `StylistId` int NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`StylistId`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -60,7 +60,7 @@ CREATE TABLE `stylist` (
 
 LOCK TABLES `stylist` WRITE;
 /*!40000 ALTER TABLE `stylist` DISABLE KEYS */;
-INSERT INTO `stylist` VALUES (4,'Claire'),(9,'Catharine');
+INSERT INTO `stylist` VALUES (1,'Claire'),(2,'Catharine'),(3,'Katherine');
 /*!40000 ALTER TABLE `stylist` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -73,4 +73,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-07-29 17:07:41
+-- Dump completed on 2022-08-02 15:22:45
